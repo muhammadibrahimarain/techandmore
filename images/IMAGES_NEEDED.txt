@@ -1,0 +1,40 @@
+========================================
+TECH & MORE - IMAGES REQUIRED
+========================================
+
+Please add the following images to this folder:
+
+HERO SECTION (Rotating Images):
+---------------------------------
+1. idea1.jpg - Picture of laptops with surrounding drawn ideas
+2. idea2.jpg - Same laptops but ideas are being connected
+3. idea3.jpg - Laptops with ideas replaced by dotted lines/network
+
+These will rotate every 4 seconds in the hero section.
+
+ABOUT SECTION:
+---------------------------------
+4. about-illustration.png (optional) - 800x600px
+   Any tech/team image for the about section
+
+SERVICE PAGES:
+---------------------------------
+5. lab.jpg - Lab drawing/illustration (for AI Services page)
+6. main.jpg - Main picture (for Data Solutions page)
+7. idea.jpg - Idea picture (for E-commerce Services page left side)
+
+All images should be:
+- JPG or PNG format
+- Good quality (not too pixelated)
+- Professional looking
+- Minimum 800px wide
+
+If you don't have these images yet:
+- The site will still work (just shows broken image icons)
+- You can add them later
+- Use placeholder images temporarily
+
+Location: techandmore-landing/images/
+
+
+

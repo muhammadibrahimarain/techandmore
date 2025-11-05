@@ -1,0 +1,157 @@
+========================================
+TECH & MORE LANDING PAGE - IMAGES GUIDE
+========================================
+
+GOOD NEWS: Logo is now text-based! You only need ONE image.
+
+========================================
+
+1. about-illustration.png ⭐ RECOMMENDED
+   ------------------------
+   Purpose: Visual for About section
+   Size: 800x600 pixels (landscape orientation)
+   Format: PNG or JPG
+   
+   Design Ideas:
+   - Team working with technology/data
+   - Modern office/workspace with computers
+   - Abstract tech illustration (AI, data, analytics themes)
+   - Dark/cosmic theme to match website aesthetic
+   - Professional business setting with tech focus
+   
+   Free Stock Image Sites:
+   -----------------------------
+   - unsplash.com (search: "team technology", "data analytics", "dark office")
+   - pexels.com (search: "business technology", "data visualization")
+   - pixabay.com (search: "artificial intelligence", "data science")
+   
+   Recommended Dark Theme Images:
+   - Technology workspace with purple/blue lighting
+   - Data visualization screens
+   - Team collaboration with laptops
+   - Abstract tech patterns/circuits
+
+
+========================================
+WHAT CHANGED?
+========================================
+
+✅ Logo is now TEXT-BASED (no image needed!)
+   - Displays as: "Tech & More"
+   - Uses Orbitron font (futuristic)
+   - Purple gradient effect
+   - Tagline below: "A Data Tech Lab"
+
+❌ logo.png - NO LONGER NEEDED
+   - The navigation uses a stylish text logo
+   - Saves you time finding/creating a logo image
+   - Looks professional and modern
+
+
+========================================
+TEMPORARY SOLUTION
+========================================
+
+If you don't have about-illustration.png yet:
+
+Option 1: Use a placeholder URL
+--------------------------------
+Open index.html and replace line 207:
+<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="About Tech & More">
+
+This will show a professional team collaboration image temporarily.
+
+
+Option 2: Leave it empty
+-------------------------
+The website will still work perfectly!
+The about section will just have:
+- Text on the left
+- Empty space on the right (where image would be)
+
+You can add the image later anytime.
+
+
+========================================
+QUICK START - Recommended Images
+========================================
+
+Best free images from Unsplash (Dark/Tech Theme):
+
+1. https://unsplash.com/photos/black-flat-screen-computer-monitor-jLwVAUtLOAQ
+   (Dark office with purple lighting - PERFECT for dark theme!)
+
+2. https://unsplash.com/photos/people-sitting-on-chair-in-front-of-computer-monitor-q10VITrVYUM
+   (Data visualization screens - Great for analytics company)
+
+3. https://unsplash.com/photos/macbook-pro-displaying-group-of-people-hpjSkU2UYSU
+   (Team video call - Modern remote work)
+
+Just download, rename to "about-illustration.png", and put in this folder!
+
+
+========================================
+IMAGE OPTIMIZATION TIPS
+========================================
+
+Before uploading:
+1. Resize to 800x600 pixels (exact)
+2. Compress using TinyPNG.com (reduce file size)
+3. Aim for under 200KB file size
+4. Save as JPG (smaller) or PNG (better quality)
+
+This ensures fast page loading!
+
+
+========================================
+DARK THEME CONSIDERATIONS
+========================================
+
+Since the website now has a dark cosmic theme:
+- Choose images with darker backgrounds
+- Purple/blue tones work great
+- Avoid super bright/white images
+- Tech-themed images fit perfectly
+- Consider adding a slight purple tint
+
+
+========================================
+DO I NEED THIS IMAGE?
+========================================
+
+NO - It's optional!
+- Website works perfectly without it
+- About section text displays fine
+- You can add it later anytime
+
+YES - But recommended!
+- Makes About section more engaging
+- Shows professionalism
+- Visual break in text-heavy content
+- Takes only 2 minutes to add
+
+
+========================================
+NEED HELP?
+========================================
+
+Email: ltd.techandmore@gmail.com
+
+Can't find a good image?
+Just use the Unsplash placeholder link above!
+
+
+========================================
+SUMMARY
+========================================
+
+Required Images: NONE (0)
+Recommended Images: 1 (about-illustration.png)
+Time needed: 2-5 minutes
+
+The website is ready to deploy even without any images!
+The text-based logo means one less thing to worry about.
+
+Happy launching! 🚀
+
+- Tech & More Team

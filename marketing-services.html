@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Services | Tech & More</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            padding: calc(80px + var(--spacing-lg)) 0 var(--spacing-lg);
+            background: #000000;
+        }
+        
+        .service-hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+        
+        .service-hero-text h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .service-hero-text p {
+            font-size: 1.25rem;
+            color: #e0e0e0;
+            line-height: 1.8;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .service-hero-image {
+            width: 100%;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: none;
+        }
+        
+        .service-hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Make buttons more visible on black background */
+        .service-hero .btn-primary {
+            background: #ffffff;
+            color: #000000;
+            border: 2px solid #ffffff;
+            font-weight: 600;
+        }
+        
+        .service-hero .btn-primary:hover {
+            background: transparent;
+            color: #ffffff;
+        }
+        
+        .service-hero .btn-secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            font-weight: 600;
+        }
+        
+        .service-hero .btn-secondary:hover {
+            background: #ffffff;
+            color: #000000;
+        }
+        
+        .service-details {
+            padding: var(--spacing-xl) 0;
+            background: var(--bg-dark);
+        }
+        
+        .service-details h2 {
+            color: var(--text-white);
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-lg);
+            text-align: center;
+        }
+        
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .service-item {
+            background: #0d0d0d;
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            border: 1px solid #333333;
+        }
+        
+        .service-item h3 {
+            color: var(--text-white);
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .service-item p {
+            color: #cccccc;
+            line-height: 1.7;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .service-item ul {
+            list-style: none;
+            margin-top: var(--spacing-sm);
+        }
+        
+        .service-item ul li {
+            color: #cccccc;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .service-item ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4facfe;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .service-hero-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-hero-text h1 {
+                font-size: 2rem;
+            }
+            
+            .service-hero-text p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">
+                        <span class="logo-text">Tech & More</span>
+                        <span class="logo-tagline">A Data Tech Lab</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SERVICE HERO -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="service-hero-text">
+                    <h1><i class="fas fa-bullhorn"></i> Marketing Services</h1>
+                    <p>
+                        Transform your marketing with data-driven strategies that deliver measurable results. 
+                        We combine analytics, creativity, and technology to drive growth.
+                    </p>
+                    <p>
+                        From campaign optimization to customer insights, we help you reach the right audience 
+                        at the right time with the right message.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="service-hero-image">
+                    <img src="images/marketing.gif" alt="Marketing Services">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE DETAILS -->
+    <section class="service-details">
+        <div class="container">
+            <h2>Our Marketing Services</h2>
+            
+            <div class="service-list">
+                <div class="service-item">
+                    <h3><i class="fas fa-chart-line"></i> Marketing Analytics</h3>
+                    <p>Measure what matters with comprehensive analytics that drive strategic marketing decisions.</p>
+                    <ul>
+                        <li>Campaign performance tracking</li>
+                        <li>ROI measurement & attribution</li>
+                        <li>Marketing dashboard development</li>
+                        <li>KPI monitoring & reporting</li>
+                        <li>Predictive analytics for marketing</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3><i class="fas fa-rocket"></i> Campaign Optimization</h3>
+                    <p>Maximize your marketing ROI with data-driven campaign optimization and A/B testing.</p>
+                    <ul>
+                        <li>A/B and multivariate testing</li>
+                        <li>Conversion rate optimization</li>
+                        <li>Ad spend optimization</li>
+                        <li>Landing page optimization</li>
+                        <li>Email campaign optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3><i class="fas fa-users"></i> Customer Insights & Segmentation</h3>
+                    <p>Understand your customers better with advanced segmentation and behavioral analysis.</p>
+                    <ul>
+                        <li>Customer profiling & personas</li>
+                        <li>Behavioral segmentation</li>
+                        <li>Customer journey mapping</li>
+                        <li>Churn prediction & prevention</li>
+                        <li>Lifetime value analysis</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3><i class="fas fa-globe"></i> Digital Marketing Strategy</h3>
+                    <p>Develop comprehensive digital marketing strategies aligned with your business goals.</p>
+                    <ul>
+                        <li>Marketing strategy development</li>
+                        <li>Channel strategy & planning</li>
+                        <li>Content marketing strategy</li>
+                        <li>Social media strategy</li>
+                        <li>SEO & SEM strategy</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3><i class="fas fa-tachometer-alt"></i> Performance Tracking</h3>
+                    <p>Monitor and optimize your marketing performance with real-time tracking and reporting.</p>
+                    <ul>
+                        <li>Real-time performance dashboards</li>
+                        <li>Custom reporting solutions</li>
+                        <li>Multi-channel attribution</li>
+                        <li>Marketing automation setup</li>
+                        <li>Integration with marketing tools</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3><i class="fas fa-search"></i> SEO Services</h3>
+                    <p>Improve your search visibility and content performance with data-driven SEO strategies.</p>
+                    <ul>
+                        <li>Technical SEO audits</li>
+                        <li>Keyword research & strategy</li>
+                        <li>Content optimization</li>
+                        <li>Link building strategies</li>
+                        <li>Local SEO optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3><i class="fas fa-cloud"></i> SaaS Marketing</h3>
+                    <p>Specialized marketing strategies for Software-as-a-Service businesses to drive growth and retention.</p>
+                    <ul>
+                        <li>SaaS growth strategies</li>
+                        <li>Customer acquisition optimization</li>
+                        <li>Retention & churn reduction</li>
+                        <li>Product-led growth tactics</li>
+                        <li>Freemium conversion optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="about service-hero" style="text-align: center; padding: var(--spacing-xl) 0;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: var(--spacing-md); color: #ffffff;">Ready to Elevate Your Marketing?</h2>
+            <p style="font-size: 1.25rem; color: #e0e0e0; margin-bottom: var(--spacing-md); max-width: 700px; margin-left: auto; margin-right: auto;">
+                Let's discuss how our marketing solutions can drive your business forward. 
+                Get in touch with our team today.
+            </p>
+            <div class="service-hero" style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap; background: transparent; padding: 0;">
+                <a href="index.html#contact" class="btn btn-primary">Request a Consultation</a>
+                <a href="index.html#services" class="btn btn-secondary">View Other Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Tech & More</h3>
+                    <p class="footer-description">
+                        A Data Tech Lab For Your Needs. TechAndMore Limited - UK-based data technology consultancy.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="data-solutions.html">Data Solutions</a></li>
+                        <li><a href="ai-services.html">AI Services</a></li>
+                        <li><a href="marketing-services.html">Marketing Services</a></li>
+                        <li><a href="ecommerce-services.html">E-commerce Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechAndMore Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

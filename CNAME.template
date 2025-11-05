@@ -1,0 +1,32 @@
+techandmore.co.uk
+
+# INSTRUCTIONS:
+# 1. Rename this file from "CNAME.template" to "CNAME" (remove .template)
+# 2. Make sure it only contains your domain name (techandmore.co.uk)
+# 3. This file is used by GitHub Pages to set up your custom domain
+# 4. After renaming, commit and push to GitHub
+# 
+# DNS SETUP REQUIRED:
+# Go to your domain registrar (where you bought techandmore.co.uk) and add:
+# 
+# For www subdomain:
+#   Type: CNAME
+#   Name: www
+#   Value: yourusername.github.io
+#   TTL: 3600
+# 
+# For root domain:
+#   Type: A
+#   Name: @
+#   Value: 185.199.108.153
+#   TTL: 3600
+# 
+# Add these additional A records for GitHub Pages:
+#   185.199.109.153
+#   185.199.110.153
+#   185.199.111.153
+# 
+# Note: DNS changes can take 24-48 hours to propagate
+
+
+

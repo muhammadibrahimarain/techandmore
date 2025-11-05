@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Solutions | Tech & More</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            padding: calc(80px + var(--spacing-lg)) 0 var(--spacing-lg);
+            background: #000000;
+        }
+        
+        .service-hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+        
+        .service-hero-text h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .service-hero-text p {
+            font-size: 1.25rem;
+            color: #e0e0e0;
+            line-height: 1.8;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .service-hero-image {
+            width: 100%;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: none;
+        }
+        
+        .service-hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Make buttons more visible on black background */
+        .service-hero .btn-primary {
+            background: #ffffff;
+            color: #000000;
+            border: 2px solid #ffffff;
+            font-weight: 600;
+        }
+        
+        .service-hero .btn-primary:hover {
+            background: transparent;
+            color: #ffffff;
+        }
+        
+        .service-hero .btn-secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            font-weight: 600;
+        }
+        
+        .service-hero .btn-secondary:hover {
+            background: #ffffff;
+            color: #000000;
+        }
+        
+        .service-details {
+            padding: var(--spacing-xl) 0;
+            background: var(--bg-dark);
+        }
+        
+        .service-details h2 {
+            color: var(--text-white);
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-lg);
+            text-align: center;
+        }
+        
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .service-item {
+            background: #0d0d0d;
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            border: 1px solid #333333;
+        }
+        
+        .service-item h3 {
+            color: var(--text-white);
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .service-item p {
+            color: #cccccc;
+            line-height: 1.7;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .service-item ul {
+            list-style: none;
+            margin-top: var(--spacing-sm);
+        }
+        
+        .service-item ul li {
+            color: #cccccc;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .service-item ul li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--text-white);
+        }
+        
+        @media (max-width: 768px) {
+            .service-hero-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                        <span class="logo-text">Tech & More</span>
+                        <span class="logo-tagline">A Data Tech Lab</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SERVICE HERO -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="service-hero-text">
+                    <h1>Data Solutions</h1>
+                    <p>
+                        Transform your raw data into actionable insights with our comprehensive data solutions. 
+                        From strategy to implementation, we build the complete data infrastructure your business needs.
+                    </p>
+                    <p>
+                        Our end-to-end approach covers everything from data pipelines and warehousing to 
+                        business intelligence dashboards and analytics consulting.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="index.html#contact" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="service-hero-image">
+                    <img src="images/datagif.gif" alt="Data Solutions">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE DETAILS -->
+    <section class="service-details">
+        <div class="container">
+            <h2>What We Offer</h2>
+            
+            <div class="service-list">
+                <!-- Service 1 -->
+                <div class="service-item">
+                    <h3>Analytics Consulting</h3>
+                    <p>
+                        Strategic guidance to transform your data into a competitive advantage. 
+                        We help you make data-driven decisions with confidence.
+                    </p>
+                    <ul>
+                        <li>Strategic Analytics Planning</li>
+                        <li>Business Intelligence Strategy</li>
+                        <li>Data Audit & Assessment</li>
+                        <li>KPI Definition & Tracking</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-item">
+                    <h3>Custom Data Pipelines</h3>
+                    <p>
+                        Build robust, scalable data pipelines that automate your data workflows 
+                        from source to destination.
+                    </p>
+                    <ul>
+                        <li>ETL/ELT Process Design</li>
+                        <li>Real-time Data Streaming</li>
+                        <li>Data Integration</li>
+                        <li>Pipeline Automation</li>
+                        <li>Data Quality Assurance</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-item">
+                    <h3>Business Intelligence Dashboards</h3>
+                    <p>
+                        Interactive dashboards that tell your data story and enable quick, 
+                        informed decision-making across your organization.
+                    </p>
+                    <ul>
+                        <li>Custom Dashboard Development</li>
+                        <li>Real-time Reporting</li>
+                        <li>Data Visualization</li>
+                        <li>Executive Dashboards</li>
+                        <li>Mobile-friendly Reports</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-item">
+                    <h3>Data Warehouse Setup</h3>
+                    <p>
+                        Centralize your data in a modern, scalable warehouse optimized for 
+                        analytics and business intelligence.
+                    </p>
+                    <ul>
+                        <li>Cloud Data Warehouse Design</li>
+                        <li>Data Modeling</li>
+                        <li>Schema Design</li>
+                        <li>Performance Tuning</li>
+                        <li>Cost Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-item">
+                    <h3>Data Governance</h3>
+                    <p>
+                        Ensure data quality, security, and compliance with comprehensive 
+                        governance frameworks and best practices.
+                    </p>
+                    <ul>
+                        <li>Data Quality Management</li>
+                        <li>Access Control & Security</li>
+                        <li>Compliance (GDPR, UK DPA)</li>
+                        <li>Data Catalog & Documentation</li>
+                        <li>Audit Trails</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-item">
+                    <h3>Advanced Analytics</h3>
+                    <p>
+                        Unlock deeper insights with statistical analysis, predictive modeling, 
+                        and advanced analytical techniques.
+                    </p>
+                    <ul>
+                        <li>Statistical Analysis</li>
+                        <li>Predictive Modeling</li>
+                        <li>Customer Segmentation</li>
+                        <li>Trend Analysis</li>
+                        <li>Forecasting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="about service-hero" style="text-align: center; padding: var(--spacing-xl) 0;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: var(--spacing-md); color: #ffffff;">Ready to Transform Your Data?</h2>
+            <p style="font-size: 1.25rem; color: #e0e0e0; margin-bottom: var(--spacing-md); max-width: 700px; margin-left: auto; margin-right: auto;">
+                Let's discuss how our data solutions can drive your business forward. 
+                Get in touch with our team today.
+            </p>
+            <div class="service-hero" style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap; background: transparent; padding: 0;">
+                <a href="index.html#contact" class="btn btn-primary">Request a Consultation</a>
+                <a href="index.html#services" class="btn btn-secondary">View Other Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Tech & More</h3>
+                    <p class="footer-description">
+                        A Data Tech Lab For Your Needs. TechAndMore Limited - UK-based data technology consultancy.
+                    </p>
+                    <p class="footer-company-info">
+                        Registered in the United Kingdom<br>
+                        Company: TechAndMore Limited
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="data-solutions.html">Data Solutions</a></li>
+                        <li><a href="ai-services.html">AI Services</a></li>
+                        <li><a href="marketing-services.html">Marketing Services</a></li>
+                        <li><a href="ecommerce-services.html">E-commerce Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechAndMore Limited. All rights reserved. | Registered in the United Kingdom</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

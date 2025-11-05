@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Store | Tech & More</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                        <span class="logo-text">Tech & More</span>
+                        <span class="logo-tagline">A Data Tech Lab</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    <li><a href="ecommerce.html" class="nav-link">E-commerce</a></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- E-COMMERCE HERO SECTION -->
+    <section class="hero" style="min-height: 70vh;">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <i class="fas fa-shopping-cart" style="color: #ec4899;"></i><br>
+                    E-commerce <span class="gradient-text">Store</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Your One Platform For Fun Stuff
+                </p>
+                <p class="hero-description">
+                    Discover curated products for tech enthusiasts, data professionals, and digital innovators
+                </p>
+            </div>
+        </div>
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+    </section>
+
+    <!-- COMING SOON SECTION -->
+    <section class="services" style="padding: var(--spacing-xl) 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Coming Soon!</h2>
+                <p class="section-subtitle" style="max-width: 800px; margin: 0 auto;">
+                    We're preparing an amazing e-commerce experience featuring tech products, 
+                    data tools, AI gadgets, and more. Stay tuned!
+                </p>
+            </div>
+
+            <!-- Product Categories Preview -->
+            <div class="services-grid" style="margin-top: var(--spacing-xl);">
+                <div class="service-card">
+                    <div class="service-icon" style="background: linear-gradient(135deg, #ec4899 0%, #a855f7 100%);">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Tech Gadgets</h3>
+                    <p class="service-description">
+                        Latest technology gadgets, accessories, and tools for developers and data professionals.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Developer Tools</li>
+                        <li><i class="fas fa-check"></i> Smart Accessories</li>
+                        <li><i class="fas fa-check"></i> Productivity Gadgets</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon" style="background: linear-gradient(135deg, #6366f1 0%, #9333ea 100%);">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="service-title">Learning Resources</h3>
+                    <p class="service-description">
+                        Curated educational materials, courses, and resources for AI, data science, and technology.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Online Courses</li>
+                        <li><i class="fas fa-check"></i> Technical Books</li>
+                        <li><i class="fas fa-check"></i> Tutorial Bundles</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon" style="background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="service-title">Fun Stuff</h3>
+                    <p class="service-description">
+                        Unique and fun products for tech enthusiasts - from merch to collectibles and more.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Tech Merch</li>
+                        <li><i class="fas fa-check"></i> Collectibles</li>
+                        <li><i class="fas fa-check"></i> Unique Finds</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div style="margin-top: var(--spacing-xl); text-align: center;">
+                <div class="service-card" style="max-width: 600px; margin: 0 auto; background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);">
+                    <div class="service-icon" style="margin: 0 auto var(--spacing-md); background: var(--gradient-primary);">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3 class="service-title">Get Notified When We Launch</h3>
+                    <p class="service-description">
+                        Be the first to know when our e-commerce platform goes live. Sign up for early access 
+                        and exclusive launch offers!
+                    </p>
+                    <form id="notifyForm" style="margin-top: var(--spacing-md);">
+                        <div style="display: flex; gap: var(--spacing-sm); flex-direction: column;">
+                            <input 
+                                type="email" 
+                                id="notifyEmail" 
+                                placeholder="Enter your email address" 
+                                required 
+                                style="width: 100%; padding: 1rem; border: 1px solid rgba(147, 51, 234, 0.3); border-radius: var(--radius-sm); background: var(--bg-darker); color: var(--text-light); font-family: inherit; font-size: 1rem;"
+                            >
+                            <button type="submit" class="btn btn-ecommerce">
+                                <i class="fas fa-envelope"></i> Notify Me at Launch
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Interim Offer -->
+            <div style="margin-top: var(--spacing-xl); text-align: center;">
+                <h3 style="color: var(--text-white); font-size: 1.5rem; margin-bottom: var(--spacing-md);">
+                    In the meantime, check out our services
+                </h3>
+                <a href="index.html#services" class="btn btn-primary">
+                    Explore Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Tech & More</h3>
+                    <p class="footer-description">
+                        A Data Tech Lab For Your Needs. TechAndMore Limited - UK-based data technology consultancy.
+                    </p>
+                    <p class="footer-company-info">
+                        Registered in the United Kingdom<br>
+                        Company: TechAndMore Limited
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="ecommerce.html">E-commerce</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="index.html#contact">Cookie Policy</a></li>
+                        <li><a href="index.html#contact">Data Protection</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechAndMore Limited. All rights reserved. | Registered in the United Kingdom</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Handle notification form
+        document.getElementById('notifyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('notifyEmail').value;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:ltd.techandmore@gmail.com?subject=E-commerce Launch Notification Request&body=Please notify me when the e-commerce platform launches.%0D%0A%0D%0AEmail: ${encodeURIComponent(email)}`;
+            
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 30px;
+                background: linear-gradient(135deg, #ec4899 0%, #a855f7 100%);
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 0.5rem;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+                z-index: 9999;
+                animation: slideInRight 0.3s ease;
+            `;
+            notification.textContent = "Thanks! We'll notify you at launch.";
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
+            
+            // Reset form
+            document.getElementById('notifyForm').reset();
+        });
+    </script>
+</body>
+</html>
+
