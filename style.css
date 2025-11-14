@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
-
 /* ========================================
    GLOBAL STYLES & RESET
    ======================================== */
@@ -107,40 +105,22 @@ body {
     gap: 0.5rem;
 }
 
-.logo a {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-.logo-icon {
-    height: 46px;
-    width: 46px;
-    object-fit: contain;
-    display: block;
-}
-
-.logo-text-group {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
-}
-
 .logo-text {
-    font-size: 1.4rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 700;
     color: var(--text-black);
-    letter-spacing: 1px;
-    font-family: 'Orbitron', 'Inter', 'Segoe UI', sans-serif;
+    letter-spacing: 0.5px;
 }
 
 .logo-tagline {
-    font-size: 0.7rem;
-    color: #555555;
+    font-size: 0.75rem;
+    color: #666666;
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    margin-left: 0.35rem;
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 2px solid #e0e0e0;
 }
 
 .nav-menu {
@@ -699,10 +679,8 @@ body {
 .footer-title {
     font-size: 1.5rem;
     margin-bottom: var(--spacing-sm);
-    font-weight: 600;
+    font-weight: 700;
     color: var(--text-white);
-    font-family: 'Orbitron', 'Inter', 'Segoe UI', sans-serif;
-    letter-spacing: 1.5px;
 }
 
 .footer-description {
@@ -1052,15 +1030,6 @@ body {
         font-size: 1.75rem;
     }
     
-    .logo-icon {
-        height: 40px;
-        width: 40px;
-    }
-
-    .logo-text-group {
-        line-height: 1.05;
-    }
-
     .hero-description,
     .hero-subtext {
         font-size: 0.9rem;
