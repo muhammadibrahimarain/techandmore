@@ -1,4 +1,4 @@
-# Tech & More - Landing Page
+# Tech&More - Landing Page
 
 Professional landing page for TechAndMore Limited, a UK-based data technology consultancy.
 
@@ -74,11 +74,11 @@ Each service page includes:
 
 ### From Homepage:
 - Click any service card → Go to service detail page
-- Click "Tech & More" logo → Refresh/scroll to top
+- Click "Tech&More" logo → Refresh/scroll to top
 - Use navbar links → Navigate to sections
 
 ### From Service Pages:
-- Click "Tech & More" logo → Return to homepage
+- Click "Tech&More" logo → Return to homepage
 - Click "View Other Services" → Go to services section
 - Use navbar → Navigate anywhere
 

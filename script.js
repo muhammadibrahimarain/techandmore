@@ -374,7 +374,7 @@ checkCookieConsent();
 // INITIALIZE
 // ========================================
 
-console.log('%c Tech & More - A Data Tech Lab', 'font-size: 18px; font-weight: bold; color: #000;');
+console.log('%c Tech&More - A Data Tech Lab', 'font-size: 18px; font-weight: bold; color: #000;');
 console.log('Website loaded successfully!');
 console.log('Email: ltd.techandmore@gmail.com');
 

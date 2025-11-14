@@ -1,4 +1,4 @@
-# 🚀 Tech & More Website - Start Here
+# 🚀 Tech&More Website - Start Here
 
 Welcome! This is your complete website for TechAndMore Limited.
 
@@ -31,13 +31,13 @@ Right-click `index.html` → "Open with" → Choose browser (Chrome, Firefox, Ed
 ## Step 3: Navigate the Site
 
 ### From Homepage:
-- Click "Tech & More" logo → Scroll to top
+- Click "Tech&More" logo → Scroll to top
 - Click any of 4 service cards → Go to service detail page
 - Click navbar links → Navigate to sections
 - Scroll down to explore About and Contact sections
 
 ### From Service Pages:
-- Click "Tech & More" logo → Return to homepage
+- Click "Tech&More" logo → Return to homepage
 - Click "View Other Services" → Go to services section
 - Use navbar to navigate
 
@@ -169,7 +169,7 @@ git init
 git add .
 
 # Commit
-git commit -m "Initial Tech & More website"
+git commit -m "Initial Tech&More website"
 
 # Push to GitHub
 git remote add origin https://github.com/yourusername/techandmore.git

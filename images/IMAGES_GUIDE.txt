@@ -37,7 +37,7 @@ WHAT CHANGED?
 ========================================
 
 ✅ Logo is now TEXT-BASED (no image needed!)
-   - Displays as: "Tech & More"
+   - Displays as: "Tech&More"
    - Uses Orbitron font (futuristic)
    - Purple gradient effect
    - Tagline below: "A Data Tech Lab"
@@ -57,7 +57,7 @@ If you don't have about-illustration.png yet:
 Option 1: Use a placeholder URL
 --------------------------------
 Open index.html and replace line 207:
-<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="About Tech & More">
+<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="About Tech&More">
 
 This will show a professional team collaboration image temporarily.
 
@@ -154,4 +154,4 @@ The text-based logo means one less thing to worry about.
 
 Happy launching! 🚀
 
-- Tech & More Team
+- Tech&More Team
